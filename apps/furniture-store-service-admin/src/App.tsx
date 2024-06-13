@@ -9,10 +9,6 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
-import { OrderList } from "./order/OrderList";
-import { OrderCreate } from "./order/OrderCreate";
-import { OrderEdit } from "./order/OrderEdit";
-import { OrderShow } from "./order/OrderShow";
 import { CategoryList } from "./category/CategoryList";
 import { CategoryCreate } from "./category/CategoryCreate";
 import { CategoryEdit } from "./category/CategoryEdit";
@@ -25,6 +21,10 @@ import { ProductList } from "./product/ProductList";
 import { ProductCreate } from "./product/ProductCreate";
 import { ProductEdit } from "./product/ProductEdit";
 import { ProductShow } from "./product/ProductShow";
+import { OrderList } from "./order/OrderList";
+import { OrderCreate } from "./order/OrderCreate";
+import { OrderEdit } from "./order/OrderEdit";
+import { OrderShow } from "./order/OrderShow";
 import { OrderItemList } from "./orderItem/OrderItemList";
 import { OrderItemCreate } from "./orderItem/OrderItemCreate";
 import { OrderItemEdit } from "./orderItem/OrderItemEdit";
@@ -63,13 +63,6 @@ const App = (): React.ReactElement => {
           show={UserShow}
         />
         <Resource
-          name="Order"
-          list={OrderList}
-          edit={OrderEdit}
-          create={OrderCreate}
-          show={OrderShow}
-        />
-        <Resource
           name="Category"
           list={CategoryList}
           edit={CategoryEdit}
@@ -89,6 +82,13 @@ const App = (): React.ReactElement => {
           edit={ProductEdit}
           create={ProductCreate}
           show={ProductShow}
+        />
+        <Resource
+          name="Order"
+          list={OrderList}
+          edit={OrderEdit}
+          create={OrderCreate}
+          show={OrderShow}
         />
         <Resource
           name="OrderItem"

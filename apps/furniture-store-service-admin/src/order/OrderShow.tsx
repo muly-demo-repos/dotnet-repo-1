@@ -28,6 +28,7 @@ export const OrderShow = (props: ShowProps): React.ReactElement => {
           <TextField source={CUSTOMER_TITLE_FIELD} />
         </ReferenceField>
         <TextField label="ID" source="id" />
+        <TextField label="Muly" source="muly" />
         <TextField label="Order Date" source="orderDate" />
         <TextField label="Status" source="status" />
         <TextField label="Total Amount" source="totalAmount" />

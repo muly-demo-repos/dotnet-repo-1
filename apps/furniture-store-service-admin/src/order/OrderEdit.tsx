@@ -6,6 +6,7 @@ import {
   EditProps,
   ReferenceInput,
   SelectInput,
+  TextInput,
   DateTimeInput,
   ReferenceArrayInput,
   SelectArrayInput,
@@ -26,6 +27,7 @@ export const OrderEdit = (props: EditProps): React.ReactElement => {
         >
           <SelectInput optionText={CustomerTitle} />
         </ReferenceInput>
+        <TextInput label="Muly" source="muly" />
         <DateTimeInput label="Order Date" source="orderDate" />
         <ReferenceArrayInput
           source="orderItems"

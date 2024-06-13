@@ -69,6 +69,7 @@ export class OrderControllerBase {
         },
 
         id: true,
+        muly: true,
         orderDate: true,
         status: true,
         totalAmount: true,
@@ -103,6 +104,7 @@ export class OrderControllerBase {
         },
 
         id: true,
+        muly: true,
         orderDate: true,
         status: true,
         totalAmount: true,
@@ -138,6 +140,7 @@ export class OrderControllerBase {
         },
 
         id: true,
+        muly: true,
         orderDate: true,
         status: true,
         totalAmount: true,
@@ -190,6 +193,7 @@ export class OrderControllerBase {
           },
 
           id: true,
+          muly: true,
           orderDate: true,
           status: true,
           totalAmount: true,
@@ -233,6 +237,7 @@ export class OrderControllerBase {
           },
 
           id: true,
+          muly: true,
           orderDate: true,
           status: true,
           totalAmount: true,
