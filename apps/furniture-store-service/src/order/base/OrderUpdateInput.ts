@@ -15,6 +15,7 @@ import { CustomerWhereUniqueInput } from "../../customer/base/CustomerWhereUniqu
 import {
   ValidateNested,
   IsOptional,
+  IsString,
   IsDate,
   IsEnum,
   IsNumber,
@@ -36,6 +37,17 @@ class OrderUpdateInput {
     nullable: true,
   })
   customer?: CustomerWhereUniqueInput | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  muly?: string | null;
 
   @ApiProperty({
     required: false,

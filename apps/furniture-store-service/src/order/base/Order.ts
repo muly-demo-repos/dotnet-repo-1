@@ -53,6 +53,17 @@ class Order {
 
   @ApiProperty({
     required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  muly!: string | null;
+
+  @ApiProperty({
+    required: false,
   })
   @IsDate()
   @Type(() => Date)

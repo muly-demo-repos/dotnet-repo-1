@@ -235,6 +235,7 @@ export class CustomerControllerBase {
         },
 
         id: true,
+        muly: true,
         orderDate: true,
         status: true,
         totalAmount: true,

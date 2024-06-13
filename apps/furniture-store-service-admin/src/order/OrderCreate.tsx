@@ -6,6 +6,7 @@ import {
   CreateProps,
   ReferenceInput,
   SelectInput,
+  TextInput,
   DateTimeInput,
   ReferenceArrayInput,
   SelectArrayInput,
@@ -26,6 +27,7 @@ export const OrderCreate = (props: CreateProps): React.ReactElement => {
         >
           <SelectInput optionText={CustomerTitle} />
         </ReferenceInput>
+        <TextInput label="Muly" source="muly" />
         <DateTimeInput label="Order Date" source="orderDate" />
         <ReferenceArrayInput
           source="orderItems"

@@ -3,6 +3,7 @@ import { OrderItemCreateNestedManyWithoutOrdersInput } from "./OrderItemCreateNe
 
 export type OrderCreateInput = {
   customer?: CustomerWhereUniqueInput | null;
+  muly?: string | null;
   orderDate?: Date | null;
   orderItems?: OrderItemCreateNestedManyWithoutOrdersInput;
   status?: "Option1" | null;
